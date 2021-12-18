@@ -150,6 +150,9 @@ ul {
 .header-list .link.current {
   color: var(--accent-color);
 }
+
+/* studia header */
+
 .link.current {
   position: relative;
 }
@@ -164,6 +167,10 @@ ul {
   bottom: 0px;
   border-radius: 2px;
   bottom: -3px;
+  opacity: 0;
+}
+.link.current:hover::after {
+  opacity: 1;
 }
 
 .header-list {
