@@ -510,6 +510,7 @@ ul {
   border-radius: 50%;
   fill: var(--icon-normal-color);
   background-color: var(--white-bgc-text-color);
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -568,6 +569,7 @@ ul {
   border-color: hover var(--accent-color);
   border-color: focus var(--accent-color);
   color: var(--icon-normal-color);
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client {
@@ -579,7 +581,9 @@ ul {
   color: var(--accent-color);
 }
 
-/* Footer logo */
+/* Footer*/
+
+/* Logo */
 
 .footer {
   display: flex;
@@ -615,6 +619,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   /* outline: 2px solid tomato; */
 }
 
@@ -659,6 +664,7 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid tomato; */
 }
 
@@ -669,6 +675,7 @@ ul {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid tomato; */
 }
 
@@ -719,6 +726,7 @@ ul {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--footer-social-bgc);
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-join {
