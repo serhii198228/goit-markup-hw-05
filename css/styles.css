@@ -753,15 +753,18 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary {
   color: var(--white-bgc-text-color);
   background-color: var(--accent-color);
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-bgc);
+  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-group {
