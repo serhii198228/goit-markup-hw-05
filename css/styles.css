@@ -10,6 +10,7 @@
   --footer-social-bgc: rgba(255, 255, 255, 0.1);
   --icon-normal-color: #afb1b8;
   --card-set-gap: 30px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* The main parameters of styling and utilits */
@@ -168,6 +169,7 @@ ul {
   border-radius: 2px;
   bottom: -3px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.current:hover::after {
   opacity: 1;
