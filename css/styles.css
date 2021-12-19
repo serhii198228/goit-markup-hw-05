@@ -13,6 +13,7 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation: 1000ms;
   --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --backdrop: rgba(0, 0, 0, 0.2);
 }
 
 /* The main parameters of styling and utilits */
@@ -308,6 +309,45 @@ ul {
   border-radius: 4px;
   color: var(--white-bgc-text-color);
 }
+/* Modal window */
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backdrop);
+  transition: opasity var(--animation);
+  visibility: var(--animation);
+  top: 0px;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+.modal-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: unset;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 /* Features WebStudio */
 
@@ -427,10 +467,47 @@ ul {
 .products-list {
   display: flex;
   margin-top: 50px;
+  position: relative;
 }
 
-.products-item:not(:last-child) {
+/* .products-item:not(:last-child) {
   margin-right: 30px;
+} */
+.products-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.products-list .products-item {
+  display: flex;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  position: relative;
+}
+.picture-title {
+  color: var(--white-bgc-text-color);
+  z-index: 1;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  bottom: 0;
+  font-size: 14px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* List title */
