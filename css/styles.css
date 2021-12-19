@@ -11,7 +11,7 @@
   --icon-normal-color: #afb1b8;
   --card-set-gap: 30px;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation: 1000ms;
+  --animation: 250ms;
   --bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop: rgba(0, 0, 0, 0.2);
 }
@@ -85,9 +85,6 @@ ul {
 /* Logo */
 
 .header-logo {
-}
-
-.header-logo {
   color: var(--black-text-color);
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -115,9 +112,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.web {
   display: flex;
 }
 
@@ -315,8 +309,7 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: var(--backdrop);
-  transition: opasity var(--animation);
-  visibility: var(--animation);
+  transition: opasity var(--animation) visibility var(--animation);
   top: 0px;
 }
 .modal {
@@ -467,7 +460,7 @@ ul {
 .products-list {
   display: flex;
   margin-top: 50px;
-  position: relative;
+  margin-left: -30px;
 }
 
 /* .products-item:not(:last-child) {
