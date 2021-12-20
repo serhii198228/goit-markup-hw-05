@@ -589,7 +589,7 @@ ul {
   fill: var(--white-bgc-text-color);
 }
 
-/* Employee name*/
+/* Employee name */
 
 .employee-name {
   color: var(--title-text-color);
@@ -693,7 +693,7 @@ ul {
   /* outline: 2px solid tomato; */
 }
 
-/* Footer contacts */
+/* contacts footer  */
 
 .address {
   color: var(--white-bgc-text-color);
@@ -761,7 +761,7 @@ ul {
   background-color: var(--hero-footer-bgc);
 }
 
-/* Footer social */
+/* social footer */
 
 .container-join {
   color: var(--white-bgc-text-color);
@@ -808,7 +808,7 @@ ul {
   fill: var(--white-bgc-text-color);
 }
 
-/* Portfolio page content */
+/* Portfolio page */
 
 .button {
   color: var(--title-text-color);
@@ -860,7 +860,7 @@ ul {
   margin-left: 6px;
 }
 
-/* Portfolio main content */
+/* Portfolio main  */
 
 .portfolio {
   padding-top: 94px;
@@ -893,7 +893,7 @@ ul {
   margin-top: var(--card-set-gap);
 }
 
-/* Card Overlay */
+/* Overlay */
 
 .card-thumb {
   position: relative;
